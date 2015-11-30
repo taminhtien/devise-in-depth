@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Devise In Depth
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    .container
+      - flash.each do |key, value|
+        .alert.alert-#{key}
+          = value
+    = yield :top_content
+    .container
+      h1 = yield :header
+      = yield
