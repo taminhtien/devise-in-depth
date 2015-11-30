@@ -13,6 +13,8 @@ html
         #navbar
           ul.nav.navbar-nav
             li = link_to 'Home', root_path
+            - if user_signed_in?
+              li = link_to 'Secret', secret_path
           ul.nav.navbar-nav.pull-right
             - if user_signed_in?
               li.dropdown
