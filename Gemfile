@@ -13,6 +13,7 @@ gem 'slim-rails'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'html2slim'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'byebug'
