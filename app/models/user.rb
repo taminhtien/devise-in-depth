@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   # validatable – Validates e-mail and password (custom validators can be used).
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable
+         :recoverable, :rememberable, :trackable, :validatable, :confirmable, :lockable, :zxcvbnable
 
   def send_devise_notification(notification, *args)
     devise_mailer.send(notification, self, *args).deliver_later # Means that the sending will be queued up

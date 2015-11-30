@@ -15,6 +15,7 @@ gem 'devise'
 gem 'html2slim'
 gem 'jquery-turbolinks'
 gem 'delayed_job_active_record'
+gem 'devise_zxcvbn'
 
 group :development, :test do
   gem 'byebug'
