@@ -14,4 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap/dropdown
+//= require zxcvbn
+//= require estimate-password
 //= require turbolinks
