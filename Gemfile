@@ -14,6 +14,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'html2slim'
 gem 'jquery-turbolinks'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   gem 'byebug'
